@@ -1,0 +1,131 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+.hero{
+
+	height: 100vh;
+	background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.6)),url('https://shopisly.com/wp-content/uploads/2020/10/shopisly-gadgets.jpg');
+	background-position: center;
+	background-size: cover;
+	overflow-x: hidden;
+	position:relative;
+}
+.nav-bar{
+	display: flex;
+	padding: 40px 120px;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: row;
+	
+}
+.nav-links ul{
+	margin-left: 50px;
+	display: inline;
+}
+.nav-links ul li{
+	list-style: none;
+	display: inline-block;
+	padding: 8px 25px;
+}
+.nav-links ul h1{
+	color: #fff;
+	text-decoration: none;
+	font-size: 30px;
+	font-style: italic;
+}
+.nav-links ul li :: after{
+	content: '';
+	width: 0;
+	height: 2px;
+	background: yellow;
+	display: block;
+	margin: auto;
+}
+.nav-links ul li :hover:: after{
+	width: 100%;
+}
+.btn{
+	padding: 10px 20px;
+	border: 0;
+	background: lightblue;
+	font-weight: bold;
+	cursor: pointer;
+}
+.btn:hover{
+	background: pink;
+}
+
+.nav-links .btn{
+	float: right;
+}
+.nav-bar .fa{
+	display: block;
+	color:#fff;
+	margin-top: 35px;
+	margin-right: 90%;
+	font-size: 30px;
+	cursor: pointer;
+}
+.fa-bars{
+	position: absolute;
+	right: 20px;
+	top: 10px;
+}
+.dropbtn {
+  background-color: lightblue;
+  color: white;
+  padding: 16px;
+  font-size: 20px;
+  border: none;
+}
+
+.main{
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  flex-direction: column;
+}
+
+.main h2{
+	font-size: 40px;
+	color: white;
+}
+.main p{
+	font-size: 30px;
+	color: white;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:lightyellow;
+  margin-top: 55px;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
