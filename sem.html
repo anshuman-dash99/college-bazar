@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>college bazar</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="hero">
+		<div class="nav-bar">
+			<div class="nav-logo">
+				<h1>SYT</h1>
+			</div>
+			<div class="nav-links" id="nav-links">
+			<i class="fa fa-close" onclick="closeMenu()"></i>
+				<ul>
+					<a href="home.html"><li>HOME</li></a>
+					<a href="#"><li>ABOUT</li></a>
+					<a href="sell_now.html"><li>SELL NOW</li></a>
+				</ul>
+				<button type="button" class="btn" onclick="document.location='login1.html'">login</button>	
+				<a href="signup.html"><button type="button" class="btn">signup</button></a>
+			</div>
+			<i class="fa fa-bars" onclick="showMenu()"></i>
+		</div>	
+			<div class="banner-title">
+				<h1>COLLEGE BAZAR</h1>
+				<h3>SELL YOUR ACCESSORIES</h3>
+				<br>
+				<button type="button" class="btn">EXPLORE</button>
+			</div>
+			<div class="vertical-bar">
+				<div class="search-icon">
+					<i class="fa fa-th-list"></i>
+					<i class="fa fa-search"></i>
+				</div>
+				<div class="social-icons">
+					<i class="fa fa-facebook"></i>
+					<i class="fa fa-instagram"></i>
+					<i class="fa fa-twitter"></i>
+					<i class="fa fa-pinterest"></i>
+				</div>
+			</div>
+
+			<!-- <div class="notifications">
+				<div class="contents">
+					<small>get notified</small>
+					<p><a href="">prev</a><br><a href="">next</a></p>
+				</div>
+				<div class="notification-img">
+					<img src="https://storage.googleapis.com/sales.appinst.io/2016/07/When-Push-Comes-to-Shove-Mobile-Marketing-Through-App-Notifications.png">
+				</div>
+			</div> -->
+	</div>
+	<script>
+		var show= document.getElementById("nav-links")
+		function showMenu(){
+
+				show.style.right="0";
+
+		}
+		function closeMenu(){
+			show.style.right="-200px";
+		}
+	</script>
+</body>
+</html>
